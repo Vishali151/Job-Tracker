@@ -1,2 +1,2 @@
-# Job-Tracker-
+# Job-Tracker
 Tracks the Application Status 
