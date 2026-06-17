@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Job Tracker</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+
+<h2>Job Application Tracker</h2>
+<p class="subtitle">Here's what's happening with your job applications</p>
+<br>
+<div class="status">
+
+    <div class="card">
+        
+        <div class="card-icon blue">
+            <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <div class="card-info">
+            <span class="card-label">Total Applications</span>
+            <span class="card-number" id="total">0</span>
+        </div>
+        </div>
+
+    <div class="card">
+    
+        <div class="card-icon green"><i class="fa-solid fa-paper-plane"></i></div>
+        <div class="card-info">
+      <span class="card-label">Applied</span>
+      <span class="card-number" id="applied">0</span>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-icon yellow"><i class="fa-solid fa-users"></i></div>
+    <div class="card-info">
+      <span class="card-label">Interview</span>
+      <span class="card-number" id="interview">0</span>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-icon purple"><i class="fa-solid fa-star"></i></div>
+    <div class="card-info">
+      <span class="card-label">Offered</span>
+      <span class="card-number" id="offered">0</span>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-icon red"><i class="fa-solid fa-circle-xmark"></i></div>
+    <div class="card-info">
+      <span class="card-label">Rejected</span>
+      <span class="card-number" id="rejected">0</span>
+    </div>
+  </div>
+
+  </div>
+
+
+<div class="form">
+    <h2>Add Application</h2>
+    <br>
+   <input type="text" id="company" placeholder="Company Name">
+   <input type="text" id="position" placeholder="Position">
+   <input type="text" id="location" placeholder="Location">
+   <select id="status">
+    <option value="Applied">Applied</option>
+    <option value="Interview">Interview</option>
+    <option value="Offered">Offered</option>
+    <option value="Rejected">Rejected</option>
+   </select>
+ 
+<input type="date" id="date">
+<button onlick="saveapplication()">ADD</button>
+</div>
+
+<h2>Recent Application</h2>
+<br>
+<div class="table">
+<table>
+    <thead>
+        <tr>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Location</th>
+            <th>Status</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody id="tablebody">
+<!--user inputs the data using form -->
+    </tbody>
+ 
+</table>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
