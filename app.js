@@ -80,19 +80,19 @@ function updatestatus(data)
             rejected++;
         }
 
-
         document.getElementById('total').innerText = total;
         document.getElementById('total').innerText = total;
         document.getElementById('applied').innerText = applied;
         document.getElementById('interview').innerText = interview;
         document.getElementById('offered').innerText = offered;
         document.getElementById('rejected').innerText = rejected;
+        
     }
 }
 
 
-//Fifth step : function 4 adds or enters application or user inputs 
-// if the input box is empty - alerts the user to enter the data 
+//Fifth step : function 4 adds or enters application or user inputs  
+// if the input box is empty - alerts the user to enter the inputs 
 // gets the input from user - sends to server in a post method
 
 
@@ -177,7 +177,7 @@ async function editApplication(id)
 }
 
 
-//Eight step : Function 7 Resets the form (after add / delete / updations )
+//Eight step : Function 7 Resets the form (after add / delete / updations)
 
 function clearForm() 
 {
